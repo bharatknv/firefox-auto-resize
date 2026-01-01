@@ -1,0 +1,20 @@
+{
+    "KPlugin": {
+        "Name": "Firefox Auto Resize",
+        "Description": "Automatically center and resize LibreWolf windows to a pre-determined, aesthetically pleasing size when moved between monitors",
+        "Icon": "preferences-system-windows",
+        "Authors": [
+            {
+                "Email": "bharatknv@gmail.com",
+                "Name": "Bharat KNV"
+            }
+        ],
+        "Id": "firefoxautoresize",
+        "Version": "1.0",
+        "License": "GPLv3",
+        "Website": "https://github.com/bharatknv/firefox-auto-resize"
+    },
+    "X-Plasma-API": "javascript",
+    "X-Plasma-MainScript": "code/main.js",
+    "KPackageStructure": "KWin/Script"
+}
