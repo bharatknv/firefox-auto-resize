@@ -35,6 +35,12 @@ function trackWindowScreenChanges(win) {
 
 function onWindowScreenChange(win) {
     console.info(`Window ${win.internalId} has changed screens`);
+
+    if (win.fullScreen) {
+        console.info(`Window ${win.internalId} is fullscreen; skip`);
+        return;
+    }
+
     const currentScreen = getCurrentScreen(win);
 
     console.info(`Current screen: ${currentScreen.name}`);
