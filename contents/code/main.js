@@ -41,6 +41,11 @@ function onWindowScreenChange(win) {
         return;
     }
 
+    if (win.maximizeMode !== 0) { // Can't find any documentation for this property but looks like 0 is un-maximized and 3 is maximized
+        console.info(`Window is maximized; skip`);
+        return;
+    }
+
     const currentScreen = getCurrentScreen(win);
 
     console.info(`Current screen: ${currentScreen.name}`);
